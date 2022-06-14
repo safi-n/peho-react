@@ -14,8 +14,7 @@ const Navigation = () => {
   }
   
   return (
-    <div className="container flex px-40 navigatOverlay">
-
+    <div className="container flex px-40">
       <div className="navigation px-20 py-10">
         <img src={PEHOLogo} alt="Logo" className="h-20" onClick={() => navigate('/')}/>
       </div>

@@ -15,7 +15,7 @@ function App() {
       <Router>
       <Navigation className='navigateMenu'/>
         <Routes>
-        <Route path="/" element={<HomePage/>} />
+        <Route  className='backOverlay' path="/" element={<HomePage/>} />
         <Route path="/services" element={<ServicePage/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/about-us" element={<AboutUs/>} />

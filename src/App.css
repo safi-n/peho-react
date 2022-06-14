@@ -29,11 +29,16 @@
 }
 
 .heroImg {
-  z-index: -10;
-  margin: -2em;
+  z-index: -8;
+  margin: -10em;
 }
 
-.navigatOverlay {
+.colorBox {
+  background-color: #61dafb;
+  width: 855px;
+}
+
+.backOverlay {
   z-index: 10;
 }
 
