@@ -3,8 +3,8 @@ import MainBanner from '../assets/XDFiles/MainBanner.jpg'
 
 const HomePage = () => {
   return (
-      <div className="hero">
-        <div className="image bg-cover">
+      <div className="heroImg">
+        <div className="heroImage bg-cover">
           <img src={MainBanner} alt="Hero Banner"/>
         </div>
       </div>

@@ -13,7 +13,7 @@ function App() {
     <div className="App">
 
       <Router>
-      <Navigation/>
+      <Navigation className='navigateMenu'/>
         <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/services" element={<ServicePage/>} />
