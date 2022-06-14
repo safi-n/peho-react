@@ -17,7 +17,7 @@ const Navigation = () => {
     <div className="container flex px-40">
 
       <div className="navigation px-20 py-10">
-        <img src={PEHOLogo} alt="Logo" className="h-20" />
+        <img src={PEHOLogo} alt="Logo" className="h-20" onClick={() => navigate('/')}/>
       </div>
 
         <div className="hidden md:flex items-center space-x-1">
@@ -25,7 +25,7 @@ const Navigation = () => {
             onClick={() => navigate('/')} 
             className={
               pathMatchRoute('/')
-              ? 'py-4 px-6 text-green-500 border-b-4 border-green-500 font-semibold'
+              ? 'py-4 px-6 text-green-500 font-semibold'
               : 'py-4 px-6 font-normal'
             }
           >
@@ -36,21 +36,29 @@ const Navigation = () => {
           onClick={() => navigate('/services')} 
           className={
             pathMatchRoute('/services')
-            ? 'py-4 px-6 text-green-500 border-b-4 border-green-500 font-semibold'
+            ? 'py-4 px-6 text-green-500 font-semibold'
             : 'py-4 px-6 font-normal'
           }
           >
             Services
           </a>
           <a
-            href=""
-            className="py-4 px-6 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            onClick={() => navigate('/about-us')} 
+            className={
+              pathMatchRoute('/about-us')
+              ? 'py-4 px-6 text-green-500 font-semibold'
+              : 'py-4 px-6 font-normal'
+            }
           >
             About
           </a>
           <a
-            href=""
-            className="py-4 px-6 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+            onClick={() => navigate('/contact-us')} 
+            className={
+              pathMatchRoute('/contact-us')
+              ? 'py-4 px-6 text-green-500 font-semibold'
+              : 'py-4 px-6 font-normal'
+            }
           >
             Contact Us
           </a>
