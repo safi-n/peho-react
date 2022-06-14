@@ -40,7 +40,7 @@ const Navigation = () => {
             : 'py-4 px-6 font-normal'
           }
           >
-            Services
+            About Us
           </a>
           <a
             onClick={() => navigate('/about-us')} 
@@ -50,7 +50,7 @@ const Navigation = () => {
               : 'py-4 px-6 font-normal'
             }
           >
-            About
+            Empower
           </a>
           <a
             onClick={() => navigate('/contact-us')} 
