@@ -28,10 +28,11 @@
   color: #61dafb;
 }
 
-.container {
-  max-width: 800px;
-  height: 780px;
+.navigation {
+  display: flex;
+  align-content: center;
 }
+
 
 @keyframes App-logo-spin {
   from {
