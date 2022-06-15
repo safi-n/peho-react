@@ -35,3 +35,18 @@
 .mainVideo {
   margin: auto;
 }
+
+.wwdContainer {
+  height: 20em;
+  width: 85%;
+  margin: auto;
+}
+
+.wwd-pic{
+  height: 20em;
+  width: 20em;
+}
+
+.mainColor {
+  color: #7EB928;
+}
