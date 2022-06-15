@@ -16,7 +16,9 @@ const Navigation = () => {
 
   return (
     <div className="fixed px-20 py-10">
+
       <div className="flex">
+
         <div className="px-10">
           <img
             src={
@@ -47,7 +49,7 @@ const Navigation = () => {
           </a>
 
           <a
-            onClick={() => navigate("/empower")}
+            onClick={() => navigate("/about-us")}
             // className={
             //   pathMatchRoute('/services')
             //   ? 'py-4 px-6 text-green-500 font-semibold'
@@ -57,13 +59,13 @@ const Navigation = () => {
             className={
               pathMatchRoute("/")
                 ? "py-4 px-6 text-white font-normal"
-                : "py-4 px-6 font-normal text-grey"
+                : "py-4 px-6 font-normal text-grey "
             }
           >
             About Us
           </a>
           <a
-            onClick={() => navigate("/about-us")}
+            onClick={() => navigate("/empower")}
             // className={
             //   !pathMatchRoute("/about-us")
             //     ? "py-4 px-6 text-white font-normal"
