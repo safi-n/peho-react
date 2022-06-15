@@ -1,4 +1,17 @@
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar a {
+  cursor: pointer;
+}
+
+.heroBg {
+  background-image: linear-gradient(90deg, #31a0da 49%, rgb(255, 255, 255) 44%);
+}
+
+.mockupBanner {
+  background-image: linear-gradient(90deg, #001d2d 49%, rgb(157, 25, 25) 44%);
 }
 
