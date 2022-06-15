@@ -1,6 +1,6 @@
 import React from "react";
 import {useLocation, useNavigate} from "react-router-dom";
-import PEHOLogo from "../assets/PNG/PEHOLogo_Black.png";
+import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
 const Navigation = () => {
   const location = useLocation()
   const navigate = useNavigate()
@@ -14,7 +14,8 @@ const Navigation = () => {
   }
   
   return (
-    <div className="container flex px-40">
+    <div className="fixed px-30 py-40 navigateMenu">
+      <div className="flex">
       <div className="navigation px-20 py-10">
         <img src={PEHOLogo} alt="Logo" className="h-20" onClick={() => navigate('/')}/>
       </div>
@@ -24,7 +25,7 @@ const Navigation = () => {
             onClick={() => navigate('/')} 
             className={
               pathMatchRoute('/')
-              ? 'py-4 px-6 text-green-500 font-semibold'
+              ? 'py-4 px-6 text-white font-semibold'
               : 'py-4 px-6 font-normal'
             }
           >
@@ -33,10 +34,11 @@ const Navigation = () => {
 
           <a
           onClick={() => navigate('/services')} 
+          
           className={
             pathMatchRoute('/services')
             ? 'py-4 px-6 text-green-500 font-semibold'
-            : 'py-4 px-6 font-normal'
+            : 'py-4 px-6 font-normal text-white'
           }
           >
             About Us
@@ -44,9 +46,9 @@ const Navigation = () => {
           <a
             onClick={() => navigate('/about-us')} 
             className={
-              pathMatchRoute('/about-us')
-              ? 'py-4 px-6 text-green-500 font-semibold'
-              : 'py-4 px-6 font-normal'
+              !pathMatchRoute('/about-us')
+              ? 'py-4 px-6 text-white font-normal'
+              : 'py-4 px-6 text-gray font-semibold '
             }
           >
             Empower
@@ -56,11 +58,12 @@ const Navigation = () => {
             className={
               pathMatchRoute('/contact-us')
               ? 'py-4 px-6 text-green-500 font-semibold'
-              : 'py-4 px-6 font-normal'
+              : 'py-4 px-6 font-normal text-white'
             }
           >
             Contact Us
           </a>
+        </div>
         </div>
     </div>
   );
