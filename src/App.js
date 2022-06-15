@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import HomePage from "./Pages/HomePage";
-import { ServicePage } from "./Pages/ServicePage";
+import EmpowerPage from "./Pages/EmpowerPage";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 
@@ -13,10 +13,10 @@ function App() {
     <div className="App">
 
       <Router>
-      <Navigation className='navigateMenu'/>
+      <Navigation/>
         <Routes>
-        <Route  className='backOverlay' path="/" element={<HomePage/>} />
-        <Route path="/services" element={<ServicePage/>} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/empower" element={<EmpowerPage/>} />
         <Route path="/contact-us" element={<ContactUs/>} />
         <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
