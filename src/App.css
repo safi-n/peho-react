@@ -38,8 +38,9 @@
   width: 855px;
 }
 
-.backOverlay {
+.navigateMenu {
   z-index: 10;
+  position: fixed;
 }
 
 @keyframes App-logo-spin {
