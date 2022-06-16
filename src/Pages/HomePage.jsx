@@ -110,7 +110,7 @@ const HomePage = () => {
 
         {/* CEO MESSAGE */}
         <div className="ceo-msg-container mt-32">
-          <div className="ceo-msg-box m-12 flex flex-row justify-center items-center space-x-60">
+          <div className="ceo-msg-box m-12 flex flex-row justify-center items-center space-x-64">
             <div className="ceo-msg-content p-9">
               <h2 className="text-4xl mb-12">
                 CEO <span className="mainColor">MESSAGE</span>
