@@ -54,3 +54,12 @@
 .wwa-container {
   height: 30em;
 }
+
+.ceo-msg-content {
+  width: 30em;
+}
+
+.ceo-img-box {
+  background-image: url('./assets/PNG/ceoImgMockup.png');
+  background-repeat: no-repeat;
+}

@@ -110,9 +110,9 @@ const HomePage = () => {
 
         {/* CEO MESSAGE */}
         <div className="ceo-msg-container mt-32">
-          <div className="ceo-msg-box m-12 justify-center flex flex-row border border-2 space-x-80">
-            <div className="ceo-msg-content w-96 p-9 border border-2">
-              <h2 className="text-4xl mb-10">
+          <div className="ceo-msg-box m-12 flex flex-row justify-center items-center space-x-60">
+            <div className="ceo-msg-content p-9">
+              <h2 className="text-4xl mb-12">
                 CEO <span className="mainColor">MESSAGE</span>
               </h2>
               <p className="font-light">
@@ -127,6 +127,10 @@ const HomePage = () => {
             <div className="ceo-img-box">
               <div className="ceo-img ">
                 <img src={ceoImage} alt="CEO image" className="h-96" />
+              </div>
+              <div className="ceo-title bg-gray-400 px-4 py-1">
+                <h2 className="text-white text-lg">Ms Hello</h2>
+                <p className="text-white text-xs">CEO & FOUNDER</p>
               </div>
             </div>
           </div>
