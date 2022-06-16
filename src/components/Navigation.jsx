@@ -15,7 +15,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="fixed px-20 py-10">
+    <div className="fixed px-14 py-10">
 
       <div className="flex">
 
