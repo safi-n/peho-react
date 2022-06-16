@@ -8,10 +8,11 @@ import youtubeIcon from "../assets/SMicon/youtubeIcon.png";
 
 const Footer = () => {
   return (
-    <div className="footer w-screen px-28 py-10">
+    <div className="footer w-screen px-44 py-10 flex flex-row space-x-32">
+      {/* Logo section */}
       <div className="footer-logo-section">
         <div className="peho-logo-footer mb-10">
-          <img src={PEHOLogoWhite} className="h-16" alt="" />
+          <img src={PEHOLogoWhite} className="h-20" alt="" />
         </div>
         <div className="footer-content w-56">
           <h2 className="mb-8 text-xl text-white">CONNECT WITH US</h2>
@@ -24,9 +25,25 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+      {/* Support links */}
       <div className="support-links-section">
-        
+        <h2 className="text-white text-lg mb-8">Support Links</h2>
+        <div className="support-links flex flex-col space-y-2">
+          <a>About Us</a>
+          <a>Empowering Women</a>
+          <a>Health Issues</a>
+          <a>We are Peace</a>
+        </div>
+      </div>
+      
+      <div className="support-links-section">
+        <h2 className="text-white text-lg mb-8">Support Links</h2>
+        <div className="support-links flex flex-col space-y-2">
+          <a>About Us</a>
+          <a>Empowering Women</a>
+          <a>Health Issues</a>
+          <a>We are Peace</a>
+        </div>
       </div>
     </div>
   );

@@ -80,3 +80,8 @@
 .footer {
   background-color: #1B90D2;
 }
+
+.support-links a{
+  color: white;
+  font-weight: 200;
+}

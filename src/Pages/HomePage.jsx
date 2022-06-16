@@ -164,7 +164,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="our-partner-container flex flex-col items-center">
+        <div className="our-partner-container flex flex-col items-center mb-36">
           <div className="our-partner-content mb-28">
             <h2 className="text-4xl">OUR <span className="mainColor">PARTNER</span></h2>
           </div>
