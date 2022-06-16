@@ -6,7 +6,7 @@ import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
 import wwaMissionIcon from "../assets/PNG/wwa-mission.png";
 import wwaGoalIcon from "../assets/PNG/wwa-goal.png";
 import ceoImage from "../assets/PNG/ceoImage.png";
-import wwoAfgMap from '../assets/PNG/wwoAfgMap.png'
+import wwoAfgMap from "../assets/PNG/wwoAfgMap.png";
 
 const HomePage = () => {
   return (
@@ -138,10 +138,24 @@ const HomePage = () => {
         </div>
 
         {/* WHERE WE OPERATE */}
-        <div className="wwo-container">
-          <div className="wwo-box flex flex-row p-20">
-            <div className="wwo-afg-map">
+        <div className="wwo-container p-36 bg-gray-50 mt-20">
+          <div className="wwo-box flex flex-row space-x-36">
+            <div className="wwo-afg-map ">
               <img src={wwoAfgMap} alt="" />
+            </div>
+            <div className="wwo-content ">
+              <h2 className="text-4xl mb-12">
+                WHERE WE <span className="mainColor">OPERATE?</span>
+              </h2>
+              <p className="font-light">
+                Harakat is an independent, non-profit, and Afghan-led,
+                organization aiming to improve Afghanistan’s business
+                environment. We work with the private sector, the government and
+                civil society to implement activities aimed at reducing or
+                removing barriers to business in Afghanistan. Harakat acts as a
+                bridge between the Government of the Islamic Republic of
+                Afghanistan (GoIRA) and the private sector.{" "}
+              </p>
             </div>
           </div>
         </div>
