@@ -168,9 +168,9 @@ const HomePage = () => {
             <h2 className="text-4xl">OUR <span className="mainColor">PARTNER</span></h2>
           </div>
           <div className="our-partner-image flex flex-row space-x-32">
-            <img src={ourPartnerIcon1} alt="Partner 1 image" />
-            <img src={ourPartnerIcon2} alt="Partner 2 image" />
-            <img src={ourPartnerIcon3} alt="Partner 3 image" />
+            <img src={ourPartnerIcon1} className='partnerIcon' alt="Partner 1 image" />
+            <img src={ourPartnerIcon2} className='partnerIcon' alt="Partner 2 image" />
+            <img src={ourPartnerIcon3} className='partnerIcon' alt="Partner 3 image" />
           </div>
         </div>
       </div>
