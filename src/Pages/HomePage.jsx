@@ -6,6 +6,7 @@ import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
 import wwaMissionIcon from "../assets/PNG/wwa-mission.png";
 import wwaGoalIcon from "../assets/PNG/wwa-goal.png";
 import ceoImage from "../assets/PNG/ceoImage.png";
+import wwoAfgMap from '../assets/PNG/wwoAfgMap.png'
 
 const HomePage = () => {
   return (
@@ -132,6 +133,15 @@ const HomePage = () => {
                 <h2 className="text-white text-lg">Ms Hello</h2>
                 <p className="text-white text-xs">CEO & FOUNDER</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* WHERE WE OPERATE */}
+        <div className="wwo-container">
+          <div className="wwo-box flex flex-row p-20">
+            <div className="wwo-afg-map">
+              <img src={wwoAfgMap} alt="" />
             </div>
           </div>
         </div>
