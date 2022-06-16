@@ -2,8 +2,9 @@ import { Fragment } from "react";
 import MainBanner from "../assets/XDFiles/MainBanner.jpg";
 import VideoHero from "../assets/PNG/videoHero.png";
 import wwdPicture from "../assets/JPG/wwdPicture.png";
-import wwaVision from "../assets/PNG/wwa-vision.png";
-import wwaMission from "../assets/PNG/wwa-mission.png";
+import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
+import wwaMissionIcon from "../assets/PNG/wwa-mission.png";
+import wwaGoalIcon from "../assets/PNG/wwa-goal.png";
 
 const HomePage = () => {
   return (
@@ -59,38 +60,50 @@ const HomePage = () => {
           </h2>
         </div>
 
-        <div className="wwa-box flex flex-row m-8">
-
-          <div className="wwa-vision m-8 border border-4">
-            <div className="wwa-vision-img">
-              <img src={wwaVision} alt="vision icon" className="h-28" />
+        <div className="wwa-box flex flex-row m-10">
+          {/* Vision */}
+          <div className="wwa-vision m-8 text-center items-center flex flex-col px-8 py-9 drop-shadow-md">
+            <div className="wwa-vision-img mb-8">
+              <img src={wwaVisionIcon} alt="vision icon" className="h-28" />
             </div>
             <div className="wwa-vision-title">
-              <h2>Vision</h2>
-              <p>
+              <h2 className="mb-12 text-2xl">Vision</h2>
+              <p className="text-xs w-60 font-light">
                 A gender-equal Afghanistan, where poverty has been overcome, and
                 everyone can get all the deserved healthcare and quality
                 education.
               </p>
             </div>
           </div>
-
-          <div className="wwa-mission m-8 border border-4">
-            <div className="wwa-vision-img">
-              <img src={wwaMission} alt="vision icon" className="h-28" />
+          {/* Mission */}
+          <div className="wwa-mission m-8 text-center items-center flex flex-col px-8 py-9 drop-shadow-md">
+            <div className="wwa-mission-img mb-8">
+              <img src={wwaMissionIcon} alt="mission icon" className="h-28" />
             </div>
-            <div className="wwa-vision-title">
-              <h2>Vision</h2>
-              <p>
-                A gender-equal Afghanistan, where poverty has been overcome, and
-                everyone can get all the deserved healthcare and quality
-                education.
+            <div className="wwa-mission-title">
+              <h2 className="mb-12 text-2xl">Mission</h2>
+              <p className="text-xs w-60 font-light">
+                To help vulnerable people inside Afghanistan by joining local
+                residents, government authorities, and international
+                organizations to fight against diseases, illiteracy, and gender
+                discrimination.
               </p>
             </div>
           </div>
-
-          <div className="wwa-goal">
-
+          {/* Goal */}
+          <div className="wwa-goal m-8 text-center flex flex-col items-center px-8 py-9 drop-shadow-md">
+            <div className="wwa-goal-img mb-8">
+              <img src={wwaGoalIcon} alt="goal icon" className="h-28" />
+            </div>
+            <div className="wwa-goal-title">
+              <h2 className="mb-12 text-2xl">Goal</h2>
+              <p className="text-xs w-60 font-light">
+                To reduce the suffering of vulnerable people by providing health
+                advocacy to improve healthcare, vocational training to enhance
+                sustainability, and means to gain equal education and work
+                rights for the feminine gender.
+              </p>
+            </div>
           </div>
         </div>
       </div>
