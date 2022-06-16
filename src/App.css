@@ -7,6 +7,13 @@
   cursor: pointer;
 }
 
+.navbar-container {
+  @keyframes identifier {
+    from {top: 0px }
+  }
+  background-image: linear-gradient(90deg, #31a0da 63%, rgb(255, 255, 255) 44%);;
+}
+
 .heroBg {
   background-image: linear-gradient(90deg, #31a0da 63%, rgb(255, 255, 255) 44%);
 }
