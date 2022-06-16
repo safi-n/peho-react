@@ -32,7 +32,7 @@ const HomePage = () => {
 
       {/* What we do */}
 
-      <div className="wwdContainer justify-center ">
+      <div className="wwdContainer justify-center">
         <div className="wwd-box flex flex-row mx-32">
           <div className="wwd-pic mr-32">
             <img src={wwdPicture} alt="What we do pic" />
@@ -53,7 +53,7 @@ const HomePage = () => {
 
       {/* Who we are? */}
 
-      <div className="wwa-container w-screen flex flex-col items-center ">
+      <div className="wwa-container w-screen flex flex-col items-center mt-40">
         <div className="wwa-title">
           <h2 className="font-bold text-4xl mb-10">
             WHO WE <span className="mainColor">ARE?</span>
