@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <Fragment>
       {/* HERO BANNER */}
-      <div className="heroBg min-h-screen w-screen flex justify-center items-center mb-40">
+      <div className="heroBg min-h-screen w-screen flex justify-center items-center mb-56">
         <div className="py-auto flex flex-row space-x-4  min-h-fit w-screen">
           <div className="textBox my-auto">
             <h2 className="text-white text-4xl mb-12">WHAT IS PEHO?</h2>
@@ -30,7 +30,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* What we do */}
+      {/* WHAT WE DO */}
 
       <div className="wwdContainer justify-center">
         <div className="wwd-box flex flex-row mx-32">
@@ -51,7 +51,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Who we are? */}
+      {/* WHO WE ARE */}
 
       <div className="wwa-container w-screen flex flex-col items-center mt-40">
         <div className="wwa-title">
@@ -106,7 +106,17 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+      {/* CEO MESSAGE */}
+      <div className="ceo-msg-container mt-32">
+        <div className="ceo-msg-box">
+          <div className="ceo-msg-content">
+            <h2 className="text-4xl">CEO <span className="mainColor">MESSAGE</span></h2>
+          </div>
+        </div>
       </div>
+      </div>
+
     </Fragment>
   );
 };
