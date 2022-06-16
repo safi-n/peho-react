@@ -10,6 +10,7 @@ import wwoAfgMap from "../assets/PNG/wwoAfgMap.png";
 import ourPartnerIcon1 from '../assets/PNG/ourPartnerIcon1.png'
 import ourPartnerIcon2 from '../assets/PNG/ourPartnerIcon2.png'
 import ourPartnerIcon3 from '../assets/PNG/ourPartnerIcon3.png'
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -173,6 +174,7 @@ const HomePage = () => {
             <img src={ourPartnerIcon3} className='partnerIcon' alt="Partner 3 image" />
           </div>
         </div>
+      <Footer/>
       </div>
     </Fragment>
   );
