@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import MainBanner from "../assets/XDFiles/MainBanner.jpg";
 import VideoHero from "../assets/PNG/videoHero.png";
 import wwdPicture from "../assets/JPG/wwdPicture.png";
+import wwaVisiom from '../assets/PNG/wwa-vision.png'
 
 const HomePage = () => {
   return (
@@ -31,11 +32,9 @@ const HomePage = () => {
 
       <div className="wwdContainer justify-center ">
         <div className="wwd-box flex flex-row mx-32">
-
         <div className="wwd-pic mr-32">
           <img src={wwdPicture} alt="What we do pic" />
         </div>
-        
         <div className="wwd-text w-96">
           <h2 className="font-bold mb-4 text-4xl">WHAT WE <span className="mainColor">DO?</span></h2>
           <p className="font-light">
@@ -48,6 +47,18 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Who we are? */}
+
+      <div className="wwa-container w-screen flex flex-col justify-center border border-2 ">
+        <h2 className="font-bold mb-12 text-4xl">WHO WE <span className="mainColor">ARE?</span></h2>
+        <div className="wwa-box flex flex-col">
+          <div className="wwa-vision">
+            <img src={wwaVisiom} alt="" />
+          </div>
+          <div className="wwa-mission"></div>
+          <div className="wwa-goal"></div>
+        </div>
+      </div>
     </Fragment>
   );
 };
