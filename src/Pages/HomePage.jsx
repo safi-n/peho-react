@@ -62,7 +62,7 @@ const HomePage = () => {
 
         <div className="wwa-box flex flex-row m-10">
           {/* Vision */}
-          <div className="wwa-vision m-8 text-center items-center flex flex-col px-8 py-9 drop-shadow-md">
+          <div className="wwa-vision m-8 text-center items-center flex flex-col px-8 py-12 bg-white drop-shadow-md">
             <div className="wwa-vision-img mb-8">
               <img src={wwaVisionIcon} alt="vision icon" className="h-28" />
             </div>
@@ -76,7 +76,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* Mission */}
-          <div className="wwa-mission m-8 text-center items-center flex flex-col px-8 py-9 drop-shadow-md">
+          <div className="wwa-mission m-8 text-center items-center flex flex-col px-8 py-12 bg-white drop-shadow-md">
             <div className="wwa-mission-img mb-8">
               <img src={wwaMissionIcon} alt="mission icon" className="h-28" />
             </div>
@@ -91,7 +91,7 @@ const HomePage = () => {
             </div>
           </div>
           {/* Goal */}
-          <div className="wwa-goal m-8 text-center flex flex-col items-center px-8 py-9 drop-shadow-md">
+          <div className="wwa-goal m-8 text-center flex flex-col items-center px-8 py-12 bg-white drop-shadow-md">
             <div className="wwa-goal-img mb-8">
               <img src={wwaGoalIcon} alt="goal icon" className="h-28" />
             </div>
