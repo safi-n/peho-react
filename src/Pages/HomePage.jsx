@@ -57,7 +57,7 @@ const HomePage = () => {
 
       <div className="wwa-container w-screen flex flex-col items-center mt-40">
         <div className="wwa-title">
-          <h2 className="font-bold text-4xl mb-10">
+          <h2 className="font-bold text-4xl mb-2">
             WHO WE <span className="mainColor">ARE?</span>
           </h2>
         </div>
@@ -130,8 +130,8 @@ const HomePage = () => {
                 <img src={ceoImage} alt="CEO image" className="h-96" />
               </div>
               <div className="ceo-title bg-gray-400 px-4 py-1">
-                <h2 className="text-white text-lg">Ms Hello</h2>
-                <p className="text-white text-xs">CEO & FOUNDER</p>
+                <h2 className="text-white text-xl">Ms Hello</h2>
+                <p className="text-white text-xs font-extralight">CEO & FOUNDER</p>
               </div>
             </div>
           </div>
