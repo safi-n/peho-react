@@ -5,6 +5,7 @@ import wwdPicture from "../assets/JPG/wwdPicture.png";
 import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
 import wwaMissionIcon from "../assets/PNG/wwa-mission.png";
 import wwaGoalIcon from "../assets/PNG/wwa-goal.png";
+import ceoImage from "../assets/PNG/ceoImage.png";
 
 const HomePage = () => {
   return (
@@ -107,16 +108,30 @@ const HomePage = () => {
           </div>
         </div>
 
-      {/* CEO MESSAGE */}
-      <div className="ceo-msg-container mt-32">
-        <div className="ceo-msg-box">
-          <div className="ceo-msg-content">
-            <h2 className="text-4xl">CEO <span className="mainColor">MESSAGE</span></h2>
+        {/* CEO MESSAGE */}
+        <div className="ceo-msg-container mt-32">
+          <div className="ceo-msg-box m-12 justify-center flex flex-row border border-2 space-x-80">
+            <div className="ceo-msg-content w-96 p-9 border border-2">
+              <h2 className="text-4xl mb-10">
+                CEO <span className="mainColor">MESSAGE</span>
+              </h2>
+              <p className="font-light">
+                We as a team are ready to create empathy and mutual
+                understanding among suffering and vulnerable people in
+                Afghanistan so that our nation can live in an atmosphere of
+                mutual understanding and without linguistics affiliations,
+                ethnicity, religion, nationality, gender and race in an
+                atmosphere of empathy.
+              </p>
+            </div>
+            <div className="ceo-img-box">
+              <div className="ceo-img ">
+                <img src={ceoImage} alt="CEO image" className="h-96" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-
     </Fragment>
   );
 };
