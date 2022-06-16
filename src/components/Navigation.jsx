@@ -1,8 +1,8 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
-import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Black.png";
+import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Orignal.png";
 const Navigation = () => {
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -15,18 +15,18 @@ const Navigation = () => {
   };
 
   return (
-    <div className="fixed px-14 py-10">
+    <div className="fixed px-14 py-6 border w-screen z-20 navbar-container">
 
-      <div className="flex">
+      <div className="flex flex-row">
 
-        <div className="px-10">
+        <div className="ml-10 mr-10">
           <img
             src={
               pathMatchRoute('/') ?
               PEHOLogo : PEHOLogoBlack
             }
             alt="Logo"
-            className="h-20"
+            className="h-16"
             onClick={() => navigate("/")}
           />
         </div>
@@ -47,9 +47,9 @@ const Navigation = () => {
             onClick={() => navigate("/about-us")}
 
             className={
-              pathMatchRoute("/")
+              pathMatchRoute('/')
                 ? "py-4 px-6 text-white font-light"
-                : "py-4 px-6 font-light text-grey "
+                : "py-4 px-6 font-light text-gray-800 "
             }
           >
             About Us

@@ -5,7 +5,6 @@ import HomePage from "./Pages/HomePage";
 import EmpowerPage from "./Pages/EmpowerPage";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
-import Footer from "./components/Footer";
 
 
 
