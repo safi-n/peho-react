@@ -7,6 +7,9 @@ import wwaMissionIcon from "../assets/PNG/wwa-mission.png";
 import wwaGoalIcon from "../assets/PNG/wwa-goal.png";
 import ceoImage from "../assets/PNG/ceoImage.png";
 import wwoAfgMap from "../assets/PNG/wwoAfgMap.png";
+import ourPartnerIcon1 from '../assets/PNG/ourPartnerIcon1.png'
+import ourPartnerIcon2 from '../assets/PNG/ourPartnerIcon2.png'
+import ourPartnerIcon3 from '../assets/PNG/ourPartnerIcon3.png'
 
 const HomePage = () => {
   return (
@@ -129,7 +132,7 @@ const HomePage = () => {
               <div className="ceo-img ">
                 <img src={ceoImage} alt="CEO image" className="h-96" />
               </div>
-              <div className="ceo-title bg-gray-400 px-4 py-1">
+              <div className="ceo-title px-4 py-1">
                 <h2 className="text-white text-xl">Ms Hello</h2>
                 <p className="text-white text-xs font-extralight">CEO & FOUNDER</p>
               </div>
@@ -138,7 +141,7 @@ const HomePage = () => {
         </div>
 
         {/* WHERE WE OPERATE */}
-        <div className="wwo-container p-36 bg-gray-50 mt-20">
+        <div className="wwo-container px-40 p-24 bg-gray-50 mt-20 mb-36">
           <div className="wwo-box flex flex-row space-x-36">
             <div className="wwo-afg-map ">
               <img src={wwoAfgMap} alt="" />
@@ -157,6 +160,17 @@ const HomePage = () => {
                 Afghanistan (GoIRA) and the private sector.{" "}
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="our-partner-container flex flex-col items-center">
+          <div className="our-partner-content mb-28">
+            <h2 className="text-4xl">OUR <span className="mainColor">PARTNER</span></h2>
+          </div>
+          <div className="our-partner-image flex flex-row space-x-32">
+            <img src={ourPartnerIcon1} alt="Partner 1 image" />
+            <img src={ourPartnerIcon2} alt="Partner 2 image" />
+            <img src={ourPartnerIcon3} alt="Partner 3 image" />
           </div>
         </div>
       </div>
