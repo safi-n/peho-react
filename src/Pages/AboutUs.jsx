@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import watofPic1 from "../assets/PNG/watofPic1.png";
 import watofPic2 from "../assets/PNG/watofPic2.png";
 import watofPic3 from "../assets/PNG/watofPic3.png";
@@ -8,10 +8,12 @@ import trustIcon from "../assets/PNG/handshakeIcon-01.png";
 import equalIcon from "../assets/PNG/EqualOpportunity-01.png";
 import ourMotivePic from "../assets/PNG/ourMotivepic.png";
 import wacPic from "../assets/PNG/wacPic.png";
+import Footer from '../components/Footer'
 
 const AboutUs = () => {
   return (
-    <div className="container border px-30 mx-auto w-screens">
+    <Fragment>
+    <div className="container px-30 mx-auto w-screens mb-32">
       <div className="watof-container h-screen flex flex-row items-center space-x-16 p-2">
         <div className="watof-content">
           <h2 className="watof-title text-4xl mb-10 mt-20 leading-10">
@@ -131,12 +133,12 @@ const AboutUs = () => {
       </div>
 
       {/* WE ARE CHANGING */}
-      <div className="wac-container flex flex-row mt-52 space-x-8">
+      <div className="wac-container flex flex-row mt-52 space-x-8 items-center">
         <div className="wac-mockup p-3">
           <img src={wacPic} alt="" />
         </div>
-        <div className="wac-content w-2/5 items-center">
-          <h2 className="text-4xl mb-4">
+        <div className="wac-content w-2/5">
+          <h2 className="text-4xl mb-5">
             WE ARE <span className="mainColor">CHANGING</span>
           </h2>
           <p className="font-light">
@@ -149,6 +151,8 @@ const AboutUs = () => {
         </div>
       </div>
     </div>
+      <Footer/>
+    </Fragment>
   );
 };
 
