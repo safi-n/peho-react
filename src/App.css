@@ -131,3 +131,10 @@
   padding-left: 4em;
 
 }
+
+.wac-mockup {
+  background-image: url('./assets/PNG/wacMockup.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20em;
+}

@@ -6,15 +6,15 @@ import afghanIcon from "../assets/PNG/AfghanIcon.png";
 import accountabilityIcon from "../assets/PNG/AccountabiltyIcon-01.png";
 import trustIcon from "../assets/PNG/handshakeIcon-01.png";
 import equalIcon from "../assets/PNG/EqualOpportunity-01.png";
-import ourMotiveMockup from "../assets/PNG/ourMotiveMockup.png";
 import ourMotivePic from "../assets/PNG/ourMotivepic.png";
+import wacPic from '../assets/PNG/wacPic.png'
 
 const AboutUs = () => {
   return (
     <div className="container border px-30 mx-auto w-screens">
       <div className="watof-container h-screen flex flex-row items-center space-x-16 p-2">
         <div className="watof-content">
-          <h2 className="watof-title text-4xl mb-10 leading-10">
+          <h2 className="watof-title text-4xl mb-10 mt-20 leading-10">
             WE ARE TEAM <br /> OF{" "}
             <span className="mainColor">PROFESSIONALS</span>
           </h2>
@@ -127,6 +127,16 @@ const AboutUs = () => {
           <div className="our-motive-mockup">
             <img src={ourMotivePic} alt="" />
           </div>
+        </div>
+      </div>
+      
+      {/* WE ARE CHANGING */}
+      <div className="wac-container flex flex-row">
+        <div className="wac-mockup">
+          <img src={wacPic} alt="" />
+        </div>
+        <div className="wac-content">
+          <h2 className="text-4xl">WE ARE <span className="mainColor">CHANGING</span></h2>
         </div>
       </div>
     </div>
