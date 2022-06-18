@@ -121,3 +121,13 @@
 .secondaryColor {
   color: #D34728;
 }
+
+.our-motive-mockup {
+  width: 30em;
+  background-image: url('./assets/PNG/ourMotiveMockup.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em;
+  padding-left: 4em;
+
+}
