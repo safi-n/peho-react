@@ -7,7 +7,7 @@ import accountabilityIcon from "../assets/PNG/AccountabiltyIcon-01.png";
 import trustIcon from "../assets/PNG/handshakeIcon-01.png";
 import equalIcon from "../assets/PNG/EqualOpportunity-01.png";
 import ourMotivePic from "../assets/PNG/ourMotivepic.png";
-import wacPic from '../assets/PNG/wacPic.png'
+import wacPic from "../assets/PNG/wacPic.png";
 
 const AboutUs = () => {
   return (
@@ -129,14 +129,23 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      
+
       {/* WE ARE CHANGING */}
-      <div className="wac-container flex flex-row">
-        <div className="wac-mockup">
+      <div className="wac-container flex flex-row mt-52 space-x-8">
+        <div className="wac-mockup p-3">
           <img src={wacPic} alt="" />
         </div>
-        <div className="wac-content">
-          <h2 className="text-4xl">WE ARE <span className="mainColor">CHANGING</span></h2>
+        <div className="wac-content w-2/5 items-center">
+          <h2 className="text-4xl mb-4">
+            WE ARE <span className="mainColor">CHANGING</span>
+          </h2>
+          <p className="font-light">
+            To transform Afghanistan from a developing to a developed country,
+            several innovative and experienced Afghans joined together under a
+            non-governmental, non-political, and non-profitable organization
+            registered as People Empathy House Organization to contribute to
+            transformation with the assistance of donors and other partners.
+          </p>
         </div>
       </div>
     </div>
