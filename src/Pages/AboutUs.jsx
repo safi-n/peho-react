@@ -3,7 +3,10 @@ import watofPic1 from "../assets/PNG/watofPic1.png";
 import watofPic2 from "../assets/PNG/watofPic2.png";
 import watofPic3 from "../assets/PNG/watofPic3.png";
 import afghanIcon from '../assets/PNG/AfghanIcon.png'
-import 
+import accountabilityIcon from '../assets/PNG/AccountabiltyIcon-01.png'
+import trustIcon from '../assets/PNG/handshakeIcon-01.png'
+import equalIcon from '../assets/PNG/EqualOpportunity-01.png'
+
 
 const AboutUs = () => {
   return (
@@ -65,7 +68,7 @@ const AboutUs = () => {
           </div>
           <div className="value-box-col-3">
             <span></span>
-            <img src="" alt="" />
+            <img src={accountabilityIcon} alt="" />
             <span></span>
           </div>
         </div>
