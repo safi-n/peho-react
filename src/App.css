@@ -104,3 +104,20 @@
 .watof-title {
   line-height: 1.4em;
 }
+
+.value-box-image-accountabilty img {
+  width: 2.8em;
+}
+.value-box-image-afghanLed img {
+  width: 1.2em;
+}
+.value-box-image-equality img {
+  width: 2.8em;
+}
+.value-box-image-trust img {
+  width: 3em;
+}
+
+.secondaryColor {
+  color: #D34728;
+}
