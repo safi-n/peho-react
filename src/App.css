@@ -95,4 +95,12 @@
 
 .watof-mockup {
   background-image: url('./assets/PNG/watofMockupHero.png');
+  height: 18em;
+  width: 29em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.watof-title {
+  line-height: 1.4em;
 }
