@@ -27,12 +27,12 @@ const AboutUs = () => {
         </div>
         <div className="watof-pics">
           <div className="watof-mockup ">
-            <div className="watof-pic-flex flex flex-row space-x-6">
+            <div className="watof-pic-flex flex flex-row space-x-8">
               <div className="watof-pic-flex-1 mt-8 ">
                 <img src={watofPic1} alt="" />
                 <div className="watof-pic-col-2 flex flex-row mt-6">
-                  <span className="col-2-img-empty w-32"></span>
-                  <img src={watofPic2} alt="" />
+                  <span className="col-2-img-empty w-36"></span>
+                  <img src={watofPic2} alt=""  className="h-40 mt-3"/>
                 </div>
               </div>
               <div className="watof-pic-flex-2 flex flex-col">
@@ -59,7 +59,7 @@ const AboutUs = () => {
             <div className="value-box-image-accountabilty bg-white drop-shadow-md p-3">
               <img src={accountabilityIcon} alt="" className="mb-4"/>
               <h2 className="text-lg mb-2 secondaryColor">Accountability</h2>
-              <p className="font-light text-sm">
+              <p className="font-light text-xs">
                 PEHO Follow the fact and condition of being responsible of
                 accountability in all its deals and relationships.
               </p>
@@ -67,11 +67,11 @@ const AboutUs = () => {
           </div>
 
           {/* Trust & Equal */}
-          <div className="value-box-col-2  flex flex-col p-3">
+          <div className="value-box-col-2 flex flex-col p-3">
             <div className="value-box-image-trust bg-white drop-shadow-md p-3">
               <img src={trustIcon} alt="" className="mb-4"/>
               <h2 className="text-lg mb-2 secondaryColor">Trust</h2>
-              <p className="font-light text-sm">
+              <p className="font-light text-xs">
                 PEHO’s impact and its well-known brand as a trusted organization
                 is our most treasured asset.
               </p>
@@ -80,7 +80,7 @@ const AboutUs = () => {
             <div className="value-box-image-equality p-3 bg-white drop-shadow-md">
               <img src={equalIcon} alt="" className="mb-4" />
               <h2 className="text-lg mb-2 secondaryColor">Equal opportunities</h2>
-              <p className="font-light text-sm">
+              <p className="font-light text-xs">
                 PEHO has a nondiscriminatory policy for internal and external
                 relationships.
               </p>
@@ -92,7 +92,7 @@ const AboutUs = () => {
             <div className="value-box-image-afghanLed bg-white drop-shadow-md p-3">
               <img src={afghanIcon} alt="afghan Icon" className="mb-4"/>
               <h2 className="text-lg mb-2 secondaryColor">Afghan Led</h2>
-              <p className="font-light text-sm">
+              <p className="font-light text-xs">
                 PEHO is an Afghan-led and Afghan-managed organization to help
                 Afghan women with health problems.
               </p>
