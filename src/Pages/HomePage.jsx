@@ -14,36 +14,32 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <Fragment>
+    <Fragment className="container px-30 mx-auto w-screens mb-32">
       {/* HERO BANNER */}
-      <div className="heroBg min-h-screen w-screen flex justify-center items-center mb-56">
-        <div className="py-auto flex flex-row space-x-4  min-h-fit w-screen">
-          <div className="textBox my-auto">
-            <h2 className="text-white text-4xl mb-12">WHAT IS PEHO?</h2>
+      <div className="heroBg h-screen flex flex-row items-center mb-56">
+          <div className="textBox leading-8">
+            <h2 className="text-white text-4xl mb-4">WHAT IS PEHO?</h2>
             <p className="text-white font-light">
               PEHO is a Non governmental Non- profitable and Non- for profit
               organization with an Non independent legal identity. PEHO Aims to
               serve people and contribute into Afghanistan’s rehabilitation.
             </p>
           </div>
-          <div className="designBox my-auto ">
-            <div className="mockupBanner p-28">
-              <div className="videoBox bg-cover ">
-                <img src={VideoHero} className="mainVideo" alt="Video hero" />
-              </div>
+          <div className="designBox">
+            <div className="hero-mockup p-1">
+                <img src={VideoHero} alt="Video hero" />
             </div>
           </div>
-        </div>
       </div>
 
       {/* WHAT WE DO */}
 
-      <div className="wwdContainer justify-center">
-        <div className="wwd-box flex flex-row mx-32">
-          <div className="wwd-pic mr-32">
+      <div className="wwdContainer flex flex-col items-center">
+        <div className="wwd-box flex flex-row items-center space-x-24">
+          <div className="wwd-pic w-96">
             <img src={wwdPicture} alt="What we do pic" />
           </div>
-          <div className="wwd-text w-96">
+          <div className="wwd-text w-96 leading-7">
             <h2 className="font-bold mb-4 text-4xl">
               WHAT WE <span className="mainColor">DO?</span>
             </h2>
@@ -74,7 +70,7 @@ const HomePage = () => {
             </div>
             <div className="wwa-vision-title">
               <h2 className="mb-12 text-2xl">Vision</h2>
-              <p className="text-xs w-60 font-light">
+              <p className="text-xs w-60 font-light leading-5 text-left">
                 A gender-equal Afghanistan, where poverty has been overcome, and
                 everyone can get all the deserved healthcare and quality
                 education.
@@ -88,7 +84,7 @@ const HomePage = () => {
             </div>
             <div className="wwa-mission-title">
               <h2 className="mb-12 text-2xl">Mission</h2>
-              <p className="text-xs w-60 font-light">
+              <p className="text-xs w-60 font-light leading-5 text-left">
                 To help vulnerable people inside Afghanistan by joining local
                 residents, government authorities, and international
                 organizations to fight against diseases, illiteracy, and gender
@@ -103,7 +99,7 @@ const HomePage = () => {
             </div>
             <div className="wwa-goal-title">
               <h2 className="mb-12 text-2xl">Goal</h2>
-              <p className="text-xs w-60 font-light">
+              <p className="text-xs w-60 font-light leading-5 text-justify">
                 To reduce the suffering of vulnerable people by providing health
                 advocacy to improve healthcare, vocational training to enhance
                 sustainability, and means to gain equal education and work
@@ -120,7 +116,7 @@ const HomePage = () => {
               <h2 className="text-4xl mb-12">
                 CEO <span className="mainColor">MESSAGE</span>
               </h2>
-              <p className="font-light">
+              <p className="font-light leading-7">
                 We as a team are ready to create empathy and mutual
                 understanding among suffering and vulnerable people in
                 Afghanistan so that our nation can live in an atmosphere of
@@ -151,7 +147,7 @@ const HomePage = () => {
               <h2 className="text-4xl mb-12">
                 WHERE WE <span className="mainColor">OPERATE?</span>
               </h2>
-              <p className="font-light">
+              <p className="font-light leading-7">
                 Harakat is an independent, non-profit, and Afghan-led,
                 organization aiming to improve Afghanistan’s business
                 environment. We work with the private sector, the government and

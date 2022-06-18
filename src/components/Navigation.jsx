@@ -15,10 +15,14 @@ const Navigation = () => {
   };
 
   return (
-    <div className="fixed px-14 py-6 border w-screen z-20 navbar-container">
+    <div className={
+      pathMatchRoute('/') ? 
+      "fixed px-14 py-6 w-screen z-20 navbar-container"
+      : "fixed px-14 py-6 w-screen z-20 navbar-container-white"
+      }>
 
       <div className="flex flex-row">
-
+        {/* Logo area */}
         <div className="ml-10 mr-10">
           <img
             src={
@@ -30,7 +34,7 @@ const Navigation = () => {
             onClick={() => navigate("/")}
           />
         </div>
-
+        
         <div className="navbar hidden md:flex items-center space-x-1">
           <a
             onClick={() => navigate("/")}
@@ -45,7 +49,6 @@ const Navigation = () => {
 
           <a
             onClick={() => navigate("/about-us")}
-
             className={
               pathMatchRoute('/')
                 ? "py-4 px-6 text-white font-light"

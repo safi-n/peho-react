@@ -7,25 +7,29 @@
   cursor: pointer;
 }
 
+.navbar-container-white {
+  background-color: white;
+}
 .navbar-container {
-  @keyframes identifier {
-    from {top: 0px }
-  }
-  background-image: linear-gradient(90deg, #31a0da 63%, rgb(255, 255, 255) 44%);;
+  background-color: #31a0da;
 }
 
+/* --------- Home Page*/
 .heroBg {
   background-image: linear-gradient(90deg, #31a0da 63%, rgb(255, 255, 255) 44%);
 }
 
-.mockupBanner {
+.hero-mockup {
   background-image: url('./assets/PNG/birdMockup.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 34em;
-  width: 42em;
-  margin-left: 2em;
-  
+  height: 32em;
+  width: 24em;
+}
+
+.hero-mockup img {
+  margin-top: 40%;
+  margin-left: 30%;
 }
 
 .textBox {
@@ -33,25 +37,10 @@
   margin-left: 5em;
 }
 
-.videoBox {
-  height: 31em;
-  width: 31em;
-  margin-left: -2.2em;
-}
-
-.mainVideo {
-  margin: auto;
-}
-
 .wwdContainer {
   height: 20em;
   width: 85%;
   margin: auto;
-}
-
-.wwd-pic{
-  height: 20em;
-  width: 20em;
 }
 
 .mainColor {

@@ -133,7 +133,7 @@ const AboutUs = () => {
       </div>
 
       {/* WE ARE CHANGING */}
-      <div className="wac-container flex flex-row mt-52 space-x-8 items-center">
+      <div className="wac-container flex flex-row mt-52 space-x-20 items-center">
         <div className="wac-mockup p-3">
           <img src={wacPic} alt="" />
         </div>
