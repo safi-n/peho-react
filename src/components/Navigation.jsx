@@ -1,8 +1,7 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
 import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Orignal.png";
 const Navigation = () => {
-
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -15,68 +14,64 @@ const Navigation = () => {
   };
 
   return (
-    <div className={
-      pathMatchRoute('/') ? 
-      "fixed px-14 py-6 w-screen z-20 navbar-container"
-      : "fixed px-14 py-6 w-screen z-20 navbar-container-white"
-      }>
-
+    <div
+      className={
+        pathMatchRoute("/")
+          ? "fixed px-14 py-6 w-screen z-20 navbar-container"
+          : "fixed px-14 py-6 w-screen z-20 navbar-container-white"
+      }
+    >
       <div className="flex flex-row">
         {/* Logo area */}
         <div className="ml-10 mr-10">
           <img
-            src={
-              pathMatchRoute('/') ?
-              PEHOLogo : PEHOLogoBlack
-            }
+            src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
             alt="Logo"
             className="h-16"
             onClick={() => navigate("/")}
           />
         </div>
-        
-        <div className="navbar hidden md:flex items-center space-x-1">
-          <a
-            onClick={() => navigate("/")}
-            className={
-              pathMatchRoute("/")
-                ? "py-4 px-6 text-white font-light"
-                : "py-4 px-6 font-light text-grey"
-            }
-          >
-            Home
-          </a>
 
-          <a
-            onClick={() => navigate("/about-us")}
-            className={
-              pathMatchRoute('/')
-                ? "py-4 px-6 text-white font-light"
-                : "py-4 px-6 font-light text-gray-800 "
-            }
-          >
-            About Us
-          </a>
-          <a
-            onClick={() => navigate("/empower")}
+        <div className="navbar hidden md:flex items-center space-x-1">
+          <NavLink
+            exact
+            to="/"
             className={
               pathMatchRoute("/")
                 ? "py-4 px-6 text-white font-light"
-                : "py-4 px-6 font-light text-grey"
-            }
-          >
-            Empower
-          </a>
-          <a
-            onClick={() => navigate("/contact-us")}
+                : "py-4 px-6 font-light text-gray-800 "}>
+            <span className={pathMatchRoute('/')? 'font-bold' : ''}>Home</span>
+          </NavLink>
+
+          <NavLink
+            exact
+            to="/about-us"
             className={
               pathMatchRoute("/")
                 ? "py-4 px-6 text-white font-light"
-                : "py-4 px-6 font-light text-grey"
-            }
-          >
-            Contact Us
-          </a>
+                : "py-4 px-6 font-light text-gray-800 "}>
+            <span className={pathMatchRoute('/about-us')? 'font-bold' : ''}>About Us</span>
+          </NavLink>
+
+          <NavLink
+            exact
+            to="/empower"
+            className={
+              pathMatchRoute("/")
+                ? "py-4 px-6 text-white font-light"
+                : "py-4 px-6 font-light text-gray-800 "}>
+            <span className={pathMatchRoute('/empower')? 'font-bold' : ''}>Empower</span>
+          </NavLink>
+
+          <NavLink
+            exact
+            to="/contact-us"
+            className={
+              pathMatchRoute("/")
+                ? "py-4 px-6 text-white font-light"
+                : "py-4 px-6 font-light text-gray-800 "}>
+            <span className={pathMatchRoute('/contact-us')? 'font-bold' : ''}>Contact Us</span>
+          </NavLink>
         </div>
       </div>
     </div>

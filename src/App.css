@@ -128,3 +128,7 @@
   width: 30em;
   height: 25em;
 }
+
+.selected{
+  color: #D34728;
+}
