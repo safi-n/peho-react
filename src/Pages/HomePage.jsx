@@ -14,11 +14,11 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <Fragment>
-      <div className="container border mx-auto border-red-300">
+      <div className="mx-auto w-screen">
         {/* HERO BANNER */}
-        <div className="home-hero-container border border-green-500 mb-40 w-fit h-screen">
-          <div className="home-hero-box flex flex-row items-center">
-            <div className="hero-content flex flex-col leading-7">
+        <div className="home-hero-container mb-40">
+          <div className="home-hero-box flex flex-row items-center h-screen p-32">
+            <div className="hero-content flex flex-col leading-7 w-2/6">
               <h2 className="text-4xl text-white mb-10">WHAT IS PEHO?</h2>
               <p className="text-white font-light">
                 PEHO is a Non governmental Non- profitable and Non- for profit
@@ -27,7 +27,7 @@ const HomePage = () => {
                 rehabilitation.
               </p>
             </div>
-            <div className="hero-mockup-box border ml-32 border-gray-800 p-20">
+            <div className="hero-mockup-box ml-8 p-24 py-36 mt-20">
               <img src={VideoHero} alt="Home main video" />
             </div>
           </div>
