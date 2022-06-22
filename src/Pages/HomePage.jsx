@@ -35,7 +35,7 @@ const HomePage = () => {
 
         {/* WHAT WE DO */}
 
-        <div className="wwdContainer border flex items-center justify-center">
+        <div className="wwdContainer flex items-center justify-center">
           <div className="wwd-box flex flex-row items-center space-x-24">
             <div className="wwd-pic">
               <img src={wwdPicture} alt="What we do pic" />
