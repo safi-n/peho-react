@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 const HomePage = () => {
   return (
     <Fragment>
-      <div className="mx-auto w-screen">
+      <div className="mx-auto w-screen border">
         {/* HERO BANNER */}
         <div className="home-hero-container mb-40">
           <div className="home-hero-box flex flex-row items-center h-screen p-32">
@@ -35,9 +35,9 @@ const HomePage = () => {
 
         {/* WHAT WE DO */}
 
-        <div className="wwdContainer flex flex-col items-center">
+        <div className="wwdContainer border flex items-center justify-center">
           <div className="wwd-box flex flex-row items-center space-x-24">
-            <div className="wwd-pic w-96">
+            <div className="wwd-pic">
               <img src={wwdPicture} alt="What we do pic" />
             </div>
             <div className="wwd-text w-96 leading-7">

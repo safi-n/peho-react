@@ -3,10 +3,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+.mainColor {
+  color: #7EB928;
+}
+.secondaryColor {
+  color: #D34728;
+}
+.selected{
+  color: #D34728;
+}
+
+/* ------------------------- Navbar */
 .navbar a {
   cursor: pointer;
 }
-
 .navbar-container-white {
   background-color: white;
 }
@@ -18,7 +28,6 @@
 .home-hero-box{
   background-image: linear-gradient(90deg, #31a0da 55%, rgb(255, 255, 255) 40%);
 }
-
 .hero-mockup-box {
   background-image: url('./assets/PNG/birdMockup.png');
   background-size: cover;
@@ -27,43 +36,36 @@
 .hero-mockup-box img{
 width: 30em;
 }
-
+ /* what we do */
 .wwdContainer {
-  height: 20em;
-  width: 85%;
-  margin: auto;
+  height: 30em;
 }
-
-.mainColor {
-  color: #7EB928;
-}
-
 .wwa-container {
   height: 30em;
 }
-
+/* CEO message */
 .ceo-msg-content {
   width: 30em;
 }
-
 .ceo-img-box {
   background-image: url('./assets/PNG/ceoImgMockup.png');
   background-repeat: no-repeat;
 }
-
-
-.wwo-content {
-  width: 45em;
-}
-
 .ceo-title {
   background-color: #b2b2b2;
 }
 
+/* Who we are */
+.wwo-content {
+  width: 45em;
+}
+
+/* Our Partner */
 .partnerIcon {
   height: 4.8em;
 }
 
+/* Footer */
 .footer {
   background-color: #1B90D2;
 }
@@ -73,6 +75,8 @@ width: 30em;
   font-weight: 200;
 }
 
+
+/* ---------- About us page */
 .watof-mockup {
   background-image: url('./assets/PNG/watofMockupHero.png');
   height: 18em;
@@ -80,11 +84,11 @@ width: 30em;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 .watof-title {
   line-height: 1.4em;
 }
 
+/* PEHO Values */
 .value-box-image-accountabilty img {
   width: 2.8em;
 }
@@ -98,10 +102,7 @@ width: 30em;
   width: 3em;
 }
 
-.secondaryColor {
-  color: #D34728;
-}
-
+/* Our motive */
 .our-motive-mockup {
   width: 30em;
   background-image: url('./assets/PNG/ourMotiveMockup.png');
@@ -112,14 +113,11 @@ width: 30em;
 
 }
 
+/* We are changing */
 .wac-mockup {
   background-image: url('./assets/PNG/wacMockup.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 30em;
   height: 25em;
-}
-
-.selected{
-  color: #D34728;
 }
