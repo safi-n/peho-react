@@ -106,7 +106,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      {/* OUR MOTIVE AREA */}
+
+      {/* -------------- OUR MOTIVE AREA */}
       <div className="our-motive-container flex flex-col items-center">
         {/* Title area */}
         <div className="ou-motive-title">
@@ -115,8 +116,8 @@ const AboutUs = () => {
           </h2>
         </div>
         {/* Content area */}
-        <div className="our-motive-box flex flex-row space-x-32 items-center">
-          <div className="our-motive-content w-96">
+        <div className="our-motive-box flex flex-row w-screen justify-center items-center space-x-20">
+          <div className="our-motive-content w-96 ">
             <p className="font-light">
               PEHO is responsible of facilitating, learning or the acquisition
               of knowledge, skills, values, moral, beliefs, habits and personal
