@@ -24,7 +24,12 @@ const ContactUs = () => {
   };
 
   const onMutated = (e) => {
-
+    if (!e.target.files) {
+      setFormData((preState) => ({
+        ...preState,
+        [e.target.id]: e.traget.value
+      }))
+    }
   }
   return (
     <div className="container">

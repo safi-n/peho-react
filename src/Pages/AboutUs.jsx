@@ -13,7 +13,7 @@ import Footer from '../components/Footer'
 const AboutUs = () => {
   return (
     <Fragment>
-    <div className="container px-30 mx-auto w-screen mb-32">
+    <div className="container px-30 mx-auto w-screen mb-32 p-20">
       <div className="watof-container h-screen flex flex-row items-center space-x-16 p-2">
         <div className="watof-content">
           <h2 className="watof-title text-4xl mb-10 mt-20 leading-10">
