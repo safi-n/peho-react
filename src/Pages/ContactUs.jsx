@@ -1,36 +1,30 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
+import Select from 'react-select'
 import Footer from "../components/Footer";
-import contactUsImg from '../assets/PNG/contactUsImg.png'
-
+import contactUsImg from "../assets/PNG/contactUsImg.png";
 const ContactUs = () => {
-  const isMounted = useRef(true)
+  const isMounted = useRef(true);
   const [formData, setFormData] = useState({
-    name: '',
-    number: '',
-    email: '',
-    country: {}
-  })
+    name: "",
+    number: "",
+    email: "",
+    country: {},
+  });
 
-  const {
-    name,
-    email,
-    number,
-    country
-  } = formData
+  const { name, email, number, country } = formData;
 
   const onSubmit = (e) => {
     e.preventDefault();
-    
   };
 
   const onMutated = (e) => {
-    if (!e.target.files) {
-      setFormData((preState) => ({
-        ...preState,
-        [e.target.id]: e.traget.value
-      }))
-    }
-  }
+    // if (!e.target.files) {
+    //   setFormData((preState) => ({
+    //     ...preState,
+    //     [e.target.id]: e.traget.value,
+    //   }));
+    // }
+  };
   return (
     <div className="container">
       <div className="contact-us-container h-screen flex flex-row space-x-20 items-center">
@@ -50,45 +44,65 @@ const ContactUs = () => {
                 <label htmlFor="Name" className="mb-2 font-light">
                   Name
                 </label>
-                <input type="text" value={formData} id='phoneNumber' className="text-input p-2 border" onChange={onMutated}/>
+                <input
+                  type="text"
+                  value={formData}
+                  id="phoneNumber"
+                  className="text-input p-2 border"
+                  onChange={onMutated}
+                />
               </div>
 
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Email" className="mb-2 font-light">
                   Email
                 </label>
-                <input type="email" id='phoneNumber' value={formData} className="text-input p-2 border" onChange={onMutated}/>
+                <input
+                  type="email"
+                  id="phoneNumber"
+                  value={formData}
+                  className="text-input p-2 border"
+                  onChange={onMutated}
+                />
               </div>
 
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Email" className="mb-2 font-light">
                   Number
                 </label>
-                <input type="number" id='phoneNumber' value={formData} className="text-input p-2 border" onChange={onMutated}/>
+                <input
+                  type="number"
+                  id="phoneNumber"
+                  value={formData}
+                  className="text-input p-2 border"
+                  onChange={onMutated}
+                />
               </div>
 
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Country" className="mb-2 font-light">
                   Country
                 </label>
-                <select id="selectCountry" className='font-light' value={formData}>
+                {/* <select id="selectCountry" className='font-light' value={formData}>
                   <option value="Afghanistan">Afghanistan</option>
-                </select>
+                </select> */}
               </div>
 
               <div className="formButton mt-8 ml-24">
-                <button type="submit" className="p-3 bg-green-400 text-white font-light">
+                <button
+                  type="submit"
+                  className="p-3 bg-green-400 text-white font-light"
+                >
                   Send Message
                 </button>
               </div>
-
             </form>
           </div>
         </div>
 
         <div className="bg-contact-us">
           <div className="img-contact-us mt-32">
-            <img src={contactUsImg}  alt="contact us" />
+            <img src={contactUsImg} alt="contact us" />
           </div>
         </div>
       </div>
