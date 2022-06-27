@@ -5,19 +5,28 @@ const ContactUs = () => {
   const formSubmitHandler = {};
   return (
     <div className="container">
-      <div className="contact-us-container h-screen flex flex-col">
+      <div className="contact-us-container h-screen flex flex-row space-x-8 border border-green-500">
 
-        <div className="form-container-contact-us p-12">
-          <form onSubmit={formSubmitHandler}>
-            <div className="input-field-text">
-              <label htmlFor="Name">Name</label>
-              <input type="text" className="text-input" />
+        <div className="form-container-contact-us p-12 flex flex-col mt-24 ml-10">
+          <div className="form-title-contact-us">
+            <h2 className="text-4xl">SEND US <span className="mainColor">Message</span></h2>
+          </div>
+          <form onSubmit={formSubmitHandler} className='w-96 border mt-20 p-10'>
+            <div className="input-field-text flex flex-col">
+              <label htmlFor="Name" className="mb-2 font-light">Name</label>
+              <input type="text" className="text-input p-2 border" />
+            </div>
+            <div className="input-field-text flex flex-col mt-9">
+              <label htmlFor="Email" className="mb-2 font-light">Email</label>
+              <input type="text" className="text-input p-2 border" />
             </div>
           </form>
         </div>
 
         <div className="bg-contact-us">
-          <h3>how are you doing?</h3>
+          <div className="img-contact-us">
+            
+          </div>
         </div>
       </div>
       <Footer />
