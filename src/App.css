@@ -130,7 +130,6 @@ width: 30em;
 
 /* -----------Contact us page */
 
-.form-contact-us {
-border: #31a0da;
-background: #FFFFFF 0% 0% no-repeat padding-box;
+.contactUsForm{
+  width: 28em;
 }

@@ -11,7 +11,7 @@ const ContactUs = () => {
           <div className="form-title-contact-us">
             <h2 className="text-4xl">SEND US <span className="mainColor">Message</span></h2>
           </div>
-          <form onSubmit={formSubmitHandler} className='w-96 border mt-20 p-10'>
+          <form onSubmit={formSubmitHandler} className='contactUsForm border mt-20 p-6'>
             <div className="input-field-text flex flex-col">
               <label htmlFor="Name" className="mb-2 font-light">Name</label>
               <input type="text" className="text-input p-2 border" />
