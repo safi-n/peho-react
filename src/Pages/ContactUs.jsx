@@ -28,7 +28,7 @@ const ContactUs = () => {
   }
   return (
     <div className="container">
-      <div className="contact-us-container h-screen flex flex-row space-x-8 border border-green-500">
+      <div className="contact-us-container h-screen flex flex-row space-x-20 items-center">
         <div className="form-container-contact-us p-12 flex flex-col mt-24 ml-10">
           <div className="form-title-contact-us">
             <h2 className="text-4xl">
@@ -82,7 +82,7 @@ const ContactUs = () => {
         </div>
 
         <div className="bg-contact-us">
-          <div className="img-contact-us">
+          <div className="img-contact-us mt-32">
             <img src={contactUsImg}  alt="contact us" />
           </div>
         </div>
