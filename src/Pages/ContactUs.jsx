@@ -21,6 +21,7 @@ const ContactUs = () => {
               SEND US <span className="mainColor">Message</span>
             </h2>
           </div>
+          {/* form start */}
           <div className="form-contact-us mx-auto mb-8">
             <form
               onSubmit={formSubmitHandler}
@@ -30,20 +31,23 @@ const ContactUs = () => {
                 <label htmlFor="Name" className="mb-2 font-light">
                   Name
                 </label>
-                <input type="text" value={formData} className="text-input p-2 border" />
+                <input type="text" value={formData} id='phoneNumber' className="text-input p-2 border" />
               </div>
+
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Email" className="mb-2 font-light">
                   Email
                 </label>
-                <input type="email" value={formData} className="text-input p-2 border" />
+                <input type="email" id='phoneNumber' value={formData} className="text-input p-2 border" />
               </div>
+
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Email" className="mb-2 font-light">
                   Number
                 </label>
-                <input type="number" value={formData} className="text-input p-2 border" />
+                <input type="number" id='phoneNumber' value={formData} className="text-input p-2 border" />
               </div>
+
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Country" className="mb-2 font-light">
                   Country
@@ -52,11 +56,13 @@ const ContactUs = () => {
                   <option value="Afghanistan">Afghanistan</option>
                 </select>
               </div>
+
               <div className="formButton mt-8 ml-24">
-                <button type="submit" className="p-3 pr-4 bg-green-500 text-white font-light">
+                <button type="submit" className="p-3 bg-green-400 text-white font-light">
                   Send Message
                 </button>
               </div>
+
             </form>
           </div>
         </div>
