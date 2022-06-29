@@ -3,9 +3,10 @@ import Select from "react-select";
 import Footer from "../components/Footer";
 import contactUsImg from "../assets/PNG/contactUsImg.png";
 import emailjs from "@emailjs/browser";
+import Result from "../components/Result";
 const ContactUs = () => {
   const form = useRef();
-  const [result, showResult] = useState(false)
+  const [result, showResult] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -23,14 +24,14 @@ const ContactUs = () => {
         (error) => {
           console.log(error.text);
         }
-        );
-        e.target.reset()
-        showResult(true)
-
+      );
+    e.target.reset();
+    showResult(true);
   };
 
   return (
     <div className="container">
+      { result ? <Result/> :
       <div className="contact-us-container h-screen flex flex-row space-x-20 items-center mb-20">
         <div className="form-container-contact-us p-12 flex flex-col mt-24 ml-10">
           <div className="form-title-contact-us">
@@ -46,6 +47,7 @@ const ContactUs = () => {
               ref={form}
             >
               <div className="input-field-text flex flex-col">
+                {/* name */}
                 <label htmlFor="Name" className="mb-2 font-light">
                   Name
                 </label>
@@ -57,7 +59,7 @@ const ContactUs = () => {
                   required
                 />
               </div>
-
+              {/* email */}
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Email" className="mb-2 font-light">
                   Email
@@ -70,7 +72,7 @@ const ContactUs = () => {
                   required
                 />
               </div>
-
+              {/* number */}
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="number" className="mb-2 font-light">
                   Number
@@ -78,12 +80,12 @@ const ContactUs = () => {
                 <input
                   type="text"
                   id="phoneNumber"
-                  name="phone"
+                  name="user_phone"
                   className="text-input p-2 border"
                 />
               </div>
-
-              <div className="input-field-text flex flex-col mt-9">
+              {/* country */}
+              {/* <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="Country" className="mb-2 font-light">
                   Country
                 </label>
@@ -93,8 +95,8 @@ const ContactUs = () => {
                 >
                   <option value="Afghanistan">Afghanistan</option>
                 </select>
-              </div>
-
+              </div> */}
+              {/* message */}
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="number" className="mb-2 font-light">
                   Message
@@ -107,7 +109,7 @@ const ContactUs = () => {
                   className="bg-white border border-gray-200 h-40"
                 ></textarea>
               </div>
-
+              {/* submit */}
               <div className="formButton mt-8 ml-24">
                 <button
                   type="submit"
@@ -127,6 +129,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+    }
       <Footer />
     </div>
   );
