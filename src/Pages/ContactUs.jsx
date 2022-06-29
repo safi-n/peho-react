@@ -2,27 +2,33 @@ import React, { useState, useRef } from "react";
 import Select from "react-select";
 import Footer from "../components/Footer";
 import contactUsImg from "../assets/PNG/contactUsImg.png";
+import emailjs from "@emailjs/browser";
 const ContactUs = () => {
-  // const isMounted = useRef(true);
-  const [formData, setFormData] = useState({
-    name: "",
-    number: "",
-    email: "",
-    country: {},
-    message: ''
-  });
-
-  const { name, email, number, country, message } = formData;
+  const form = useRef();
+  const [result, showResult] = useState(false)
 
   const onSubmit = (e) => {
     e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_h4dey33",
+        "template_t19eoy8",
+        form.current,
+        "5Zt16kyRZxZpPmFJ4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+        );
+        e.target.reset()
+        showResult(true)
+
   };
 
-  const onMutated = (e) => {
-    setFormData({
-      [e.target.id]: e.target.value,
-    });
-  };
   return (
     <div className="container">
       <div className="contact-us-container h-screen flex flex-row space-x-20 items-center mb-20">
@@ -37,6 +43,7 @@ const ContactUs = () => {
             <form
               onSubmit={onSubmit}
               className="contactUsForm border mt-10 p-6 mx-auto"
+              ref={form}
             >
               <div className="input-field-text flex flex-col">
                 <label htmlFor="Name" className="mb-2 font-light">
@@ -44,11 +51,9 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  value={name}
-                  name="name"
+                  name="user_name"
                   id="name"
                   className="text-input p-2 border"
-                  onChange={onMutated}
                   required
                 />
               </div>
@@ -60,10 +65,8 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="email"
-                  name="email"
-                  value={email}
+                  name="user_email"
                   className="text-input p-2 border"
-                  onChange={onMutated}
                   required
                 />
               </div>
@@ -73,12 +76,10 @@ const ContactUs = () => {
                   Number
                 </label>
                 <input
-                  type="number"
+                  type="text"
                   id="phoneNumber"
                   name="phone"
-                  value={number}
                   className="text-input p-2 border"
-                  onChange={onMutated}
                 />
               </div>
 
@@ -86,21 +87,32 @@ const ContactUs = () => {
                 <label htmlFor="Country" className="mb-2 font-light">
                   Country
                 </label>
-                {/* <select id="selectCountry" className='font-light' value={formData}>
+                <select
+                  id="selectCountry"
+                  className="font-light"
+                >
                   <option value="Afghanistan">Afghanistan</option>
-                </select> */}
+                </select>
               </div>
+
               <div className="input-field-text flex flex-col mt-9">
                 <label htmlFor="number" className="mb-2 font-light">
                   Message
                 </label>
-                <textarea name="message" id="message" cols="30" rows="10" value={message} className="bg-white border border-gray-200 h-40" onChange={onMutated}></textarea>
+                <textarea
+                  name="user_message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  className="bg-white border border-gray-200 h-40"
+                ></textarea>
               </div>
 
               <div className="formButton mt-8 ml-24">
                 <button
                   type="submit"
                   className="p-3 bg-green-400 text-white font-light"
+                  value="send"
                 >
                   Send Message
                 </button>
