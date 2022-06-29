@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-import Select from 'react-select'
+import Select from "react-select";
 import Footer from "../components/Footer";
 import contactUsImg from "../assets/PNG/contactUsImg.png";
 const ContactUs = () => {
-  const isMounted = useRef(true);
+  // const isMounted = useRef(true);
   const [formData, setFormData] = useState({
     name: "",
     number: "",
@@ -18,12 +18,10 @@ const ContactUs = () => {
   };
 
   const onMutated = (e) => {
-    // if (!e.target.files) {
-    //   setFormData((preState) => ({
-    //     ...preState,
-    //     [e.target.id]: e.traget.value,
-    //   }));
-    // }
+    setFormData({
+      [e.target.id]: e.target.value
+    }
+    )
   };
   return (
     <div className="container">
@@ -46,10 +44,12 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  value={formData}
-                  id="phoneNumber"
+                  value={name}
+                  name='name'
+                  id="name"
                   className="text-input p-2 border"
                   onChange={onMutated}
+                  required
                 />
               </div>
 
@@ -59,21 +59,24 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="email"
-                  id="phoneNumber"
-                  value={formData}
+                  id="email"
+                  name="email"
+                  value={email}
                   className="text-input p-2 border"
                   onChange={onMutated}
+                  required
                 />
               </div>
 
               <div className="input-field-text flex flex-col mt-9">
-                <label htmlFor="Email" className="mb-2 font-light">
+                <label htmlFor="number" className="mb-2 font-light">
                   Number
                 </label>
                 <input
                   type="number"
                   id="phoneNumber"
-                  value={formData}
+                  name="phone"
+                  value={number}
                   className="text-input p-2 border"
                   onChange={onMutated}
                 />
@@ -86,13 +89,13 @@ const ContactUs = () => {
                 {/* <select id="selectCountry" className='font-light' value={formData}>
                   <option value="Afghanistan">Afghanistan</option>
                 </select> */}
+                
               </div>
 
               <div className="formButton mt-8 ml-24">
                 <button
                   type="submit"
-                  className="p-3 bg-green-400 text-white font-light"
-                >
+                  className="p-3 bg-green-400 text-white font-light"                >
                   Send Message
                 </button>
               </div>
