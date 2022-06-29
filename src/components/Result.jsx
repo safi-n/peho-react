@@ -2,11 +2,9 @@ import React from 'react'
 
 const  Result= () => {
   return (
-    <div className='container'>
-      <div className="bg-result h-screen w-screen bg-black opacity-40 z-10 bg-fixed">
-        <div className="msg-sent-recived">
+    <div className='container bg-black opacity-10 h-screen'>
+      <div className="bg-result">
           <p>Your email is sent successfuly, we will reach you soon</p>
-        </div>
       </div>
     </div>
   )

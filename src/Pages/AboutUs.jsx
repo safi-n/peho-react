@@ -17,7 +17,7 @@ const AboutUs = () => {
       <div className="watof-container h-screen flex flex-row items-center space-x-16 p-2">
         <div className="watof-content">
           <h2 className="watof-title text-4xl mb-10 mt-20 leading-10">
-            WE ARE TEAM <br /> OF{" "}
+            WE ARE TEAM <br /> OF
             <span className="mainColor">PROFESSIONALS</span>
           </h2>
           <p className="watof-paragraf font-light leading-7">
