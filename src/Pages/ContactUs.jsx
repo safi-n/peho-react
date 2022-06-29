@@ -9,9 +9,10 @@ const ContactUs = () => {
     number: "",
     email: "",
     country: {},
+    message: ''
   });
 
-  const { name, email, number, country } = formData;
+  const { name, email, number, country, message } = formData;
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -19,13 +20,12 @@ const ContactUs = () => {
 
   const onMutated = (e) => {
     setFormData({
-      [e.target.id]: e.target.value
-    }
-    )
+      [e.target.id]: e.target.value,
+    });
   };
   return (
     <div className="container">
-      <div className="contact-us-container h-screen flex flex-row space-x-20 items-center">
+      <div className="contact-us-container h-screen flex flex-row space-x-20 items-center mb-20">
         <div className="form-container-contact-us p-12 flex flex-col mt-24 ml-10">
           <div className="form-title-contact-us">
             <h2 className="text-4xl">
@@ -45,7 +45,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   value={name}
-                  name='name'
+                  name="name"
                   id="name"
                   className="text-input p-2 border"
                   onChange={onMutated}
@@ -89,13 +89,19 @@ const ContactUs = () => {
                 {/* <select id="selectCountry" className='font-light' value={formData}>
                   <option value="Afghanistan">Afghanistan</option>
                 </select> */}
-                
+              </div>
+              <div className="input-field-text flex flex-col mt-9">
+                <label htmlFor="number" className="mb-2 font-light">
+                  Message
+                </label>
+                <textarea name="message" id="message" cols="30" rows="10" value={message} className="bg-white border border-gray-200 h-40" onChange={onMutated}></textarea>
               </div>
 
               <div className="formButton mt-8 ml-24">
                 <button
                   type="submit"
-                  className="p-3 bg-green-400 text-white font-light"                >
+                  className="p-3 bg-green-400 text-white font-light"
+                >
                   Send Message
                 </button>
               </div>
