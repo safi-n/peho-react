@@ -53,7 +53,7 @@ const Navigation = () => {
             <span className={pathMatchRoute('/about-us')? 'font-bold' : ''}>About Us</span>
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             exact
             to="/empower"
             className={
@@ -61,7 +61,7 @@ const Navigation = () => {
                 ? "py-4 px-6 text-white font-light"
                 : "py-4 px-6 font-light text-gray-800 "}>
             <span className={pathMatchRoute('/empower')? 'font-bold' : ''}>Empower</span>
-          </NavLink>
+          </NavLink> */}
 
           <NavLink
             exact

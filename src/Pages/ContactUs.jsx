@@ -11,8 +11,7 @@ const ContactUs = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
+    emailjs.sendForm(
         "service_h4dey33",
         "template_t19eoy8",
         form.current,
