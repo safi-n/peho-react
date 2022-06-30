@@ -106,7 +106,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
       {/* -------------- OUR MOTIVE AREA */}
       <div className="our-motive-container flex flex-col items-center">
         {/* Title area */}
