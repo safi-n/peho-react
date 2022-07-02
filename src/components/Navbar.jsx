@@ -113,9 +113,10 @@ export const Navbar = () => {
       </nav>
       {showMenu ? (
         <div className="burger-menu-slider z-50 fixed">
-          <div className="bg-burger-menu h-screen bg-black w-screen">
-            <div className="burger-links-container">
-              <div className="burger-link ">
+          <div className="bg-burger-menu h-screen bg-black w-screen"
+          onClick={() => setShowMenu(!showMenu)}>
+            <div className="burger-links-container p-20">
+              <div className="burger-link text-white text-lg p-2 text-center">
                 <NavLink to={'/'}>
                   Home
                 </NavLink>
