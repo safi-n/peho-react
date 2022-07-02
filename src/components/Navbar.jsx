@@ -116,9 +116,19 @@ export const Navbar = () => {
           <div className="bg-burger-menu h-screen bg-black w-screen"
           onClick={() => setShowMenu(!showMenu)}>
             <div className="burger-links-container p-20">
-              <div className="burger-link text-white text-lg p-2 text-center">
+              <div className="burger-link text-white text-lg p-2 text-center mt-20">
                 <NavLink to={'/'}>
                   Home
+                </NavLink>
+              </div>
+              <div className="burger-link text-white text-lg p-2 text-center">
+                <NavLink to={'/about-us'}>
+                  About us
+                </NavLink>
+              </div>
+              <div className="burger-link text-white text-lg p-2 text-center">
+                <NavLink to={'/contact-us'}>
+                  Contact us
                 </NavLink>
               </div>
             </div>
