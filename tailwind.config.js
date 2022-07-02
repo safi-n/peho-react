@@ -3,23 +3,19 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
       screens: {
-        'mobile': '640px',
-        // => @media (min-width: 640px) { ... }
+        'sm': '576px',
+        // => @media (min-width: 576px) { ... }
   
-        'iPad': '768px',
-        // => @media (min-width: 768px) { ... }
+        'md': '960px',
+        // => @media (min-width: 960px) { ... }
   
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
-    }
+        'lg': '1440px',
+        // => @media (min-width: 1440px) { ... }
+      },
+    },
+    
   },
   plugins: [],
 }

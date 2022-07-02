@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
+// import Navigation from "./components/Navigation";
 import HomePage from "./Pages/HomePage";
 import EmpowerPage from "./Pages/EmpowerPage";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
+import Navbar from "./components/Navbar";
 
 
 
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
 
       <Router>
-      <Navigation/>
+      <Navbar/>
         <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/empower" element={<EmpowerPage/>} />
