@@ -1,11 +1,12 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
 import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Orignal.png";
+import { useState } from "react";
 
 export const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
-
+  const [showMenu, setShowMenu] = useState(false);
   const pathMatchRoute = (route) => {
     {
       if (route === location.pathname) {
@@ -13,13 +14,18 @@ export const Navbar = () => {
       }
     }
   };
+
   return (
-    <div className={pathMatchRoute("/") ? "nav-color fixed z-50" : "bg-white fixed z-50"}>
+    <div
+      className={
+        pathMatchRoute("/") ? "nav-color fixed z-40" : "bg-white fixed z-50"
+      }
+    >
       <nav
         className={
           pathMatchRoute("/")
-            ? "navbar-container w-screen space-x-12"
-            : "navbar-container w-screen space-x-12"
+            ? "navbar-container w-screen space-x-20"
+            : "navbar-container w-screen space-x-20"
         }
       >
         {/* Logo area */}
@@ -28,12 +34,12 @@ export const Navbar = () => {
             <img
               src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
               alt="PEHO logo"
-              className="h-14"
+              className="nav-logo"
             />
           </a>
         </div>
         {/* NavLinks */}
-        <div className="navlinks-container border flex flex-row space-x-7">
+        <div className="navlinks-container flex flex-row space-x-12">
           {/* Home link */}
           <NavLink
             to="/"
@@ -82,7 +88,44 @@ export const Navbar = () => {
             </span>
           </NavLink>
         </div>
+
+        <div className="burger-container">
+          <a onClick={() => setShowMenu(!showMenu)}>
+            <div className="navlink-burger flex flex-col space-y-1">
+              <div
+                className={
+                  pathMatchRoute("/") ? "bar bg-white" : "bar bg-black"
+                }
+              ></div>
+              <div
+                className={
+                  pathMatchRoute("/") ? "bar bg-white" : "bar bg-black"
+                }
+              ></div>
+              <div
+                className={
+                  pathMatchRoute("/") ? "bar bg-white" : "bar bg-black"
+                }
+              ></div>
+            </div>
+          </a>
+        </div>
       </nav>
+      {showMenu ? (
+        <div className="burger-menu-slider z-50 fixed">
+          <div className="bg-burger-menu h-screen bg-black w-screen">
+            <div className="burger-links-container">
+              <div className="burger-link ">
+                <NavLink to={'/'}>
+                  Home
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
