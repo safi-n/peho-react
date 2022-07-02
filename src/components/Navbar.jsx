@@ -19,10 +19,10 @@ export const Navbar = () => {
         pathMatchRoute('/') ?
         "navbar-container w-screen border space-x-12"
         : 
-        'bg-white px-20 py-6 w-screen border flex flex-row items-center justify-start space-x-12 mb:justify-between'
+        'bg-white w-screen border space-x-12'
         }>
         {/* Logo area */}
-        <div className="logo-container border p-2">
+        <div className="logo-container p-2">
           <a href="/">
           <img
             src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
