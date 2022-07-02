@@ -14,24 +14,27 @@ export const Navbar = () => {
     }
   };
   return (
-    <>
-      <nav className={
-        pathMatchRoute('/') ?
-        "navbar-container w-screen border space-x-12"
-        : 
-        'bg-white w-screen border space-x-12'
-        }>
+    <div className={pathMatchRoute("/") ? "nav-color fixed z-50" : "bg-white fixed z-50"}>
+      <nav
+        className={
+          pathMatchRoute("/")
+            ? "navbar-container w-screen space-x-12"
+            : "navbar-container w-screen space-x-12"
+        }
+      >
         {/* Logo area */}
         <div className="logo-container p-2">
           <a href="/">
-          <img
-            src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
-            alt="PEHO logo"
-            className="h-14"
-          />
+            <img
+              src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
+              alt="PEHO logo"
+              className="h-14"
+            />
           </a>
         </div>
-        <div className="navlinks-container border">
+        {/* NavLinks */}
+        <div className="navlinks-container border flex flex-row space-x-7">
+          {/* Home link */}
           <NavLink
             to="/"
             className={
@@ -44,9 +47,43 @@ export const Navbar = () => {
               Home
             </span>
           </NavLink>
+          {/* About us */}
+          <NavLink
+            to="/about-us"
+            className={
+              pathMatchRoute("/")
+                ? "text-white font-light"
+                : "text-black font-light"
+            }
+          >
+            <span
+              className={
+                pathMatchRoute("/about-us") ? "font-bold" : "font-light"
+              }
+            >
+              About us
+            </span>
+          </NavLink>
+          {/* Contact us */}
+          <NavLink
+            to="/contact-us"
+            className={
+              pathMatchRoute("/")
+                ? "text-white font-light"
+                : "text-black font-light"
+            }
+          >
+            <span
+              className={
+                pathMatchRoute("/contact-us") ? "font-bold" : "font-light"
+              }
+            >
+              Contact us
+            </span>
+          </NavLink>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
