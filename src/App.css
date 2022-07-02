@@ -14,22 +14,17 @@
 }
 
 /* ------------------------- Navbar */
-.navbar a {
+.navbar-container > a {
   cursor: pointer;
 }
-.navbar-container-white {
-  background-color: white;
-}
+
 .navbar-container {
   background-color: #31a0da;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-items: start;
-}
-
-.nav-toggle {
-  display: none;
+  padding: 1.3em;
 }
 
 @media (max-width: 600px) {

@@ -17,17 +17,19 @@ export const Navbar = () => {
     <>
       <nav className={
         pathMatchRoute('/') ?
-        "navbar-container px-20 py-6 w-screen border space-x-12"
+        "navbar-container w-screen border space-x-12"
         : 
         'bg-white px-20 py-6 w-screen border flex flex-row items-center justify-start space-x-12 mb:justify-between'
         }>
         {/* Logo area */}
         <div className="logo-container border p-2">
+          <a href="/">
           <img
             src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
             alt="PEHO logo"
             className="h-14"
           />
+          </a>
         </div>
         <div className="navlinks-container border">
           <NavLink
