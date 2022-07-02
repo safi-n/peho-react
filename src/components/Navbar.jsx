@@ -15,22 +15,32 @@ export const Navbar = () => {
   };
   return (
     <>
-      <nav className="px-20 py-6 w-screen border flex flex-row items-center space-x-12">
+      <nav className={
+        pathMatchRoute('/') ?
+        "navbar-container px-20 py-6 w-screen border space-x-12"
+        : 
+        'bg-white px-20 py-6 w-screen border flex flex-row items-center justify-start space-x-12 mb:justify-between'
+        }>
         {/* Logo area */}
-        <div className="logo-container">
+        <div className="logo-container border p-2">
           <img
             src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
             alt="PEHO logo"
             className="h-14"
           />
         </div>
-        <div className="navlinks-container">
-          <NavLink to='/'
-          className={
-            pathMatchRoute('/') ?
-            'text-white font-light' : 'text-black font-light'
-          }>
-            <span className={pathMatchRoute('/') ? 'font-bold' : 'font-light'}>Home</span>
+        <div className="navlinks-container border">
+          <NavLink
+            to="/"
+            className={
+              pathMatchRoute("/")
+                ? "text-white font-light"
+                : "text-black font-light"
+            }
+          >
+            <span className={pathMatchRoute("/") ? "font-bold" : "font-light"}>
+              Home
+            </span>
           </NavLink>
         </div>
       </nav>
@@ -38,4 +48,4 @@ export const Navbar = () => {
   );
 };
 
-export default Navbar 
+export default Navbar;

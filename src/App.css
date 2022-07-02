@@ -22,27 +22,23 @@
 }
 .navbar-container {
   background-color: #31a0da;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: start;
 }
 
 .nav-toggle {
   display: none;
 }
 
-@media (max-width: 700px) {
-    .nav-toggle {
-      display: flex;
-      width: 50px;
-      height: 50px;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-    .nav-toggle > .bar {
-      position: relative;
-      width: 32px;
-      height: 2px;
-      background-color: white;
-    }
+@media (max-width: 600px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 /* --------- Home Page*/
 
