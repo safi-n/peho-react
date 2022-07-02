@@ -24,8 +24,8 @@ export const Navbar = () => {
       <nav
         className={
           pathMatchRoute("/")
-            ? "navbar-container w-screen space-x-20"
-            : "navbar-container w-screen space-x-20"
+            ? "navbar-container w-screen space-x-20 mobile:space-x-1"
+            : "navbar-container w-screen space-x-20 mobile:space-x-1"
         }
       >
         {/* Logo area */}
@@ -116,7 +116,7 @@ export const Navbar = () => {
           <div className="bg-burger-menu h-screen bg-black w-screen"
           onClick={() => setShowMenu(!showMenu)}>
             <div className="burger-links-container p-20">
-              <div className="burger-link text-white text-lg p-2 text-center mt-20">
+              <div className="burger-link text-white text-lg p-2 text-center">
                 <NavLink to={'/'}>
                   Home
                 </NavLink>

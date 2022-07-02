@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      'mb': '500px'
+      'mobile': '400px'
     }
     
   },
