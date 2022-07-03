@@ -2,6 +2,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
 import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Orignal.png";
 import { useState } from "react";
+import classes from '../Style/nabar.module.css'
 
 export const Navbar = () => {
   const location = useLocation();
@@ -18,7 +19,7 @@ export const Navbar = () => {
   return (
     <div
       className={
-        pathMatchRoute("/") ? "nav-color fixed z-40" : "bg-white fixed z-50"
+        pathMatchRoute("/") ? `nav-color fixed z-40` : "bg-white fixed z-40"
       }
     >
       <nav
