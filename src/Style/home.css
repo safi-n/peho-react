@@ -1,0 +1,84 @@
+.home-hero-container{
+  margin: auto;
+  margin-bottom: 12em;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, #31a0da 60%, rgb(255, 255, 255) 40%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  width: 33.333333%;
+}
+
+.hero-mockup-box {
+  background-image: url("../assets/PNG/birdMockup.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7em;
+}
+.hero-mockup-box img {
+  width: 25em;
+}
+@media (max-width: 500px) {
+  .home-hero-container{
+    margin-bottom: 4em;
+    background-image:#31a0da;
+    flex-direction: column;
+  }
+  .hero-content{
+    width: 100%;
+    padding: 2em;
+    margin-top: 10em;
+  }
+  .hero-mockup-box img {
+    visibility: hidden;
+  }
+  .hero-mockup-box {
+    visibility: hidden;
+  }
+}
+
+/* what we do */
+.wwdContainer {
+  height: 30em;
+}
+.wwa-container {
+  height: 30em;
+}
+/* .wwd-pic {
+  height: em;
+} */
+/* CEO message */
+.ceo-msg-content {
+  width: 30em;
+}
+.ceo-img-box {
+  background-image: url("../assets/PNG/ceoImgMockup.png");
+  background-repeat: no-repeat;
+}
+.ceo-title {
+  background-color: #b2b2b2;
+}
+
+/* Who we are */
+.wwo-content {
+  width: 45em;
+}
+
+/* Our Partner */
+.partnerIcon {
+  height: 4.8em;
+}
+
+@media (max-width: 400px) {
+  .homepage-container {
+    max-width: 100%;
+  }
+
+  .home-hero-container{
+    background-image: linear-gradient(90deg, #31a0da 100%, #31a0da 40%);
+  }
+}
