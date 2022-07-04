@@ -90,13 +90,13 @@ export const Navbar = () => {
         </div>
 
         {/* ---------Burger menu */}
-        <div className="burger-container ">
+        <div className="burger-container">
           <div className="logo-container-mobile">
             <a href="/">
               <img
                 src={pathMatchRoute("/") ? PEHOLogo : PEHOLogoBlack}
                 alt="PEHO logo"
-                className="nav-logo"
+                className="nav-logo-mobile"
               />
             </a>
           </div>
