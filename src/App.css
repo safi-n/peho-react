@@ -20,20 +20,6 @@ a {
   color: #d34728;
 }
 
-/* ------------------------- Navbar */
-
-/* --------- Home Page*/
-
-/* Footer */
-.footer {
-  background-color: #1b90d2;
-}
-
-.support-links a {
-  color: white;
-  font-weight: 200;
-}
-
 /* ---------- About us page */
 .watof-mockup {
   background-image: url("./assets/PNG/watofMockupHero.png");
@@ -83,4 +69,23 @@ a {
 
 .contactUsForm {
   width: 28em;
+}
+
+/* Footer */
+.footer {
+  background-color: #1b90d2;
+  width: 100vw;
+}
+
+.support-links a {
+  color: white;
+  font-weight: 200;
+}
+@media (max-width: 500px) {
+  .support-links-section{
+    visibility: hidden;
+  }
+  .ceo-msg-container{
+    visibility: hidden;
+  }
 }

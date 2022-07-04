@@ -1,4 +1,5 @@
 import "../Style/home.css";
+import { Fragment } from "react";
 import VideoHero from "../assets/PNG/videoHero.png";
 import wwdPicture from "../assets/JPG/wwdPicture.png";
 import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
@@ -13,7 +14,8 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="w-screen h-screen items-center">
+    <Fragment>
+    <div className="home-container w-screen h-screen items-center">
       {/* HERO BANNER */}
       <div className="home-hero-container">
         <div className="hero-content flex flex-col leading-7">
@@ -187,6 +189,7 @@ const HomePage = () => {
       </div>
       <Footer />
     </div>
+    </Fragment>
   );
 };
 

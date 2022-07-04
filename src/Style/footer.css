@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mainColor {
+  color: #7eb928;
+}
+.secondaryColor {
+  color: #d34728;
+}
+.selected {
+  color: #d34728;
+}
+/* --------------------------- */
+.footer-container{
+  width: 100vw;
+  height: 15em;
+  background-color: #1b90d2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+}
+.footer-log-white img {
+  height: 6em;
+}
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5em;
+  margin-top: 2em;
+  color: white;
+}
+.footer-socialmedia-icons {
+  display: flex;
+}
+.footer-socialmedia-icons img {
+  margin-right: 0.8em;
+  height: 1.2em;
+}
+
+.footer-support-link{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+  margin-top: 3em;
+  font-weight: 300;
+}
+.footer-support-link2{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+  margin-top: 3em ;
+  font-weight: 300;
+}
+
+.footer-mobile-container{
+  visibility: hidden;
+}
+
+
+@media (max-width: 500px) {
+  .footer-support-link2{
+    visibility: hidden;
+  }
+  .footer-support-link{
+    visibility: hidden;
+  }
+  .footer-socialmedia-icons{
+    visibility: hidden;
+  }
+  .footer-logo-section {
+    visibility: hidden;
+  }
+
+  .footer-mobile-container{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b90d2;
+    width: 100vw;
+    height: 10em;
+    line-height: 4em;
+  }
+  .footer-container{
+    visibility: hidden;
+  }
+  .footer-socialmedia-icons-mobile{
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-socialmedia-icons-mobile img{
+    height: 1em;
+    margin-right: 0.6em;
+  }
+  .footer-socalmedia-title-mobile {
+    color: white;
+  }
+}
