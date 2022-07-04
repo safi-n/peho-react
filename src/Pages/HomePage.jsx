@@ -1,3 +1,4 @@
+import "../Style/home.css";
 import VideoHero from "../assets/PNG/videoHero.png";
 import wwdPicture from "../assets/JPG/wwdPicture.png";
 import wwaVisionIcon from "../assets/PNG/wwa-vision.png";
@@ -12,18 +13,18 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center">
+    <div className="w-screen h-screen items-center">
       {/* HERO BANNER */}
-      <div className="home-hero-container mb-40">
-        <div className="home-hero-box flex flex-row items-center h-screen w-screen p-32">
-          <div className="hero-content flex flex-col leading-7 w-2/6">
-            <h2 className="text-4xl text-white mb-10">WHAT IS PEHO?</h2>
-            <p className="text-white font-light">
-              PEHO is a Non governmental Non- profitable and Non- for profit
-              organization with an Non independent legal identity. PEHO Aims to
-              serve people and contribute into Afghanistan’s rehabilitation.
-            </p>
-          </div>
+      <div className="home-hero-container">
+        <div className="hero-content flex flex-col leading-7">
+          <h2 className="text-4xl text-white mb-10">WHAT IS PEHO?</h2>
+          <p className="text-white font-light">
+            PEHO is a Non governmental Non- profitable and Non- for profit
+            organization with an Non independent legal identity. PEHO Aims to
+            serve people and contribute into Afghanistan’s rehabilitation.
+          </p>
+        </div>
+        <div className="hero-img-box">
           <div className="hero-mockup-box ml-8 p-24 py-36 mt-20">
             <img src={VideoHero} alt="Home main video" />
           </div>

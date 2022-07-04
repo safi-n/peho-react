@@ -1,8 +1,8 @@
+import '../Style/navbar.css'
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import PEHOLogo from "../assets/PNG/PEHOLogo_White.png";
 import PEHOLogoBlack from "../assets/PNG/PEHOLogo_Orignal.png";
 import { useState } from "react";
-import classes from '../Style/nabar.module.css'
 
 export const Navbar = () => {
   const location = useLocation();
@@ -19,14 +19,14 @@ export const Navbar = () => {
   return (
     <div
       className={
-        pathMatchRoute("/") ? `nav-color fixed z-40` : "bg-white fixed z-40"
+        pathMatchRoute("/") ? `nav-color` : "bg-white fixed"
       }
     >
       <nav
         className={
           pathMatchRoute("/")
-            ? "navbar-container w-screen space-x-20 mobile:space-x-1"
-            : "navbar-container w-screen space-x-20 mobile:space-x-1"
+            ? "navbar-container"
+            : "navbar-container"
         }
       >
         {/* Logo area */}
