@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App w-screen">
+    <div className="App">
 
       <Router>
       <Navbar/>

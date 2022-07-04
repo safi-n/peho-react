@@ -23,34 +23,8 @@
   width: 25em;
 }
 @media (max-width: 500px) {
-  .home-hero-container{
-    visibility: hidden;
-  }
-  .hero-content{
-    visibility: hidden;
-  }
-  .hero-mockup-box img {
-    visibility: hidden;
-  }
-  .hero-mockup-box {
-    visibility: hidden;
-  }
-  .wwdContainer {
-    visibility: hidden;
-  }
-  .ceo-msg-content {
-    visibility: hidden;
-  }
-  .wwo-container {
-    visibility: hidden;
-  }
-  .wwa-container{visibility: hidden;}
-  .our-partner-container{
-    visibility: hidden;
-  }
   .home-container{
-    height: 100vh;
-    width: 100vw;
+    visibility: hidden;
   }
 }
 
