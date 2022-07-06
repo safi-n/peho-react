@@ -6,21 +6,20 @@ import EmpowerPage from "./Pages/EmpowerPage";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import Navbar from "./components/Navbar";
-
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-
       <Router>
-      <Navbar/>
+        <Navbar />
         <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/empower" element={<EmpowerPage/>} />
-        <Route path="/contact-us" element={<ContactUs/>} />
-        <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/empower" element={<EmpowerPage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

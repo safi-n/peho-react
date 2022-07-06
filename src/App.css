@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  padding: 0;
   margin: 0;
 }
 
@@ -69,23 +68,4 @@ a {
 
 .contactUsForm {
   width: 28em;
-}
-
-/* Footer */
-.footer {
-  background-color: #1b90d2;
-  width: 100vw;
-}
-
-.support-links a {
-  color: white;
-  font-weight: 200;
-}
-@media (max-width: 500px) {
-  .support-links-section{
-    visibility: hidden;
-  }
-  .ceo-msg-container{
-    visibility: hidden;
-  }
 }
