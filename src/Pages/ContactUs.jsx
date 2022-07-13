@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
-import Footer from "../components/Footer";
+import Footer from "../components/shared/footer/Footer";
 import contactUsImg from "../assets/PNG/contactUsImg.png";
 import emailjs from "@emailjs/browser";
 const ContactUs = () => {

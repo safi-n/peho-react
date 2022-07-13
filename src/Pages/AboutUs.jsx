@@ -8,7 +8,7 @@ import trustIcon from "../assets/PNG/handshakeIcon-01.png";
 import equalIcon from "../assets/PNG/EqualOpportunity-01.png";
 import ourMotivePic from "../assets/PNG/ourMotivepic.png";
 import wacPic from "../assets/PNG/wacPic.png";
-import Footer from '../components/Footer'
+import Footer from '../components/shared/footer/Footer'
 
 const AboutUs = () => {
   return (
